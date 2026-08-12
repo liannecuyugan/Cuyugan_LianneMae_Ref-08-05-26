@@ -1,0 +1,21 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter your name: ");
+        string name = Console.ReadLine();
+
+        Console.WriteLine ("Enter your age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine ("Enter your weight: ");
+        string weightInput = Console.ReadLine();
+        double weight = Convert.ToDouble(weightInput);
+
+        bool Kg = true;
+
+        Console.WriteLine("Hello! + name + ", you are " + age + " years old, and your weight is " + weight.ToString("f2") + " and that is " + Kg + " ");
+    }
+}
